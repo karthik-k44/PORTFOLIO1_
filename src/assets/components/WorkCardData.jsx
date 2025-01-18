@@ -11,7 +11,7 @@ const ProjectCardData= [
     },
     {
         imgsrc:pro2,
-        title:"Self Potfolio",
+        title:"Self Portfolio",
         text:"Welcome to my personal portfolio! I am a passionate and dedicated web developer with a keen interest in creating innovative and responsive web applications. I have honed my skills in various front-end technologies such as HTML, CSS, JavaScript, React, and Vite.",
         view:"https://karthikkarunakaran.netlify.app/",
         source:"https://github.com/karthik-k44/PORTFOLIO1_"
