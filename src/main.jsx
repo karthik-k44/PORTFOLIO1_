@@ -4,7 +4,7 @@ import App from './App.jsx';
 import { BrowserRouter } from 'react-router-dom';
 
 createRoot(document.getElementById('root')).render(
-  <BrowserRouter basename="/PORTFOLIO1_"> {/* Set the base path here */}
+  <BrowserRouter> {/* Set the base path here */}
     <App />
   </BrowserRouter>
 );
