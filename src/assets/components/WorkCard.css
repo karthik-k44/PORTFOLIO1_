@@ -1,0 +1,117 @@
+/* General Styling */
+.work-container {
+    padding: 4rem 1rem;
+    background-color: black;
+    text-align: center;
+}
+
+.project-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 0 auto;
+    max-width: 1140px;
+    padding: 0 1rem;
+}
+
+/* Card Styling */
+.project-card {
+    padding: 10px;
+    background: #1a1919;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.project-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+    margin: 1rem 0;
+}
+
+.pro-details {
+    padding: 0 1rem 1rem;
+    font-size: small;
+    color: #555;
+    line-height: 1.5;
+    text-align: justify;
+}
+.pro-details p{
+    font-size: medium;
+}
+
+/* Button Styling */
+.pro-btns {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+}
+
+.pro-btns .btn {
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+.pro-btns .btn:hover {
+    background: orange;
+}
+
+/* Responsive Design */
+
+/* Tablet View (2 Columns) */
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+    .project-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .project-heading {
+        font-size: 2.2rem;
+    }
+}
+
+/* Mobile View (1 Column) */
+@media screen and (max-width: 768px) {
+    .project-heading {
+        font-size: 2rem;
+    }
+
+    .project-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 0;
+    }
+
+    .project-card {
+        margin: 0 1rem;
+    }
+
+    .pro-btns {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .pro-btns .btn {
+        width: 100%;
+        text-align: center;
+    }
+}

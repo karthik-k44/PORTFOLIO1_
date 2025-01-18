@@ -1,0 +1,44 @@
+.hero-img{
+    width: 100%;
+    background: rgba(0,0,0,0.5);
+    height: 60vh;
+    position: relative;
+}
+
+.hero-img::before{
+    content: "";
+    background: url("https://cdn.prod.website-files.com/6344c9cef89d6f2270a38908/65725709c91402ab52b1c2b9_Best%207%2B%20Coding%20Languages%20for%20a%20SaaS%20Tech%20Stack%202023%20Guide.webp");
+    background-size: cover;
+    background-position: center top;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.heading{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-img h1{
+    font-size: 2.4rem;
+}
+
+.hero-img p{
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 640px){
+    .hero-img h1{
+        font-size: 2rem;
+    }
+}
+
